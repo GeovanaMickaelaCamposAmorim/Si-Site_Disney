@@ -10,7 +10,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    
+    padding: 0 15px;
 }
 
 .titulo{
@@ -24,7 +24,6 @@
 
 #cabecalho{
     background-color: rgb(52, 119, 185);
-    margin-bottom: 30px;
     font-size: 21px;
 }
 
@@ -68,23 +67,10 @@
     background-color: #06c;
 }
 
-.video {
-    position: absolute;
-    object-fit: cover;
-    top: auto;
-    left: auto;
-    height: 100%;
-    width: 100%;
-}
 
-.conteudo {
-    padding-top: 22vh;
-    padding-left: 18vh;
-    display: grid;
-    grid-template-rows: min-content auto min-content;
-    position: absolute;
+#index_princesas {
+    position: relative;
 }
-
 
 #index_princesas a:hover{
     text-decoration: underline;
@@ -106,16 +92,43 @@
     border-radius: 30px;
 }
 
-#index_marvel {
-    width: 6000px;
-     height : 630px;
-     background-repeat: no-repeat;
-    background-image: url("../imagens/princesas/marvel_01.jpg");
+#index_princesas #conteudo {
+    padding-top: 22vh;
+    padding-left: 18vh;
+    position: absolute;
+    z-index: 1;
 }
 
-#imagens{
-    margin-bottom: 10px;
-    margin-top: -25px;
+#index_princesas .video {
+    position: relative;
+    object-fit: cover;
+    top: auto;
+    left: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#index_marvel {
+    margin: 50px 0;
+}
+
+#imagens {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#imagens .container {
+    display: flex;
+    gap: 20px;
+}
+
+#imagens .container a {
+    flex: 1;
+}
+
+#imagens .container a img {
+    width: 100%;
+    height: 100%;
 }
 
 #princesas .container{
@@ -123,9 +136,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
     margin-bottom: 50PX;
-  
 }
-
 
 #princesas .container ul{
     padding-left: 20px;
