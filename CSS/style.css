@@ -47,6 +47,10 @@
     width: 80px;
 }
 
+#cabecalho #logo_pixar {
+    width: 200px;
+}
+
 #cabecalho #menu ul {
     display: flex;
 }
@@ -79,6 +83,7 @@
 #index_princesas a {
     width: 45%;
     height: 6vh;
+    font-size: 20px;
     text-align: center;
     display: block;
     margin-top: 1em;
@@ -89,7 +94,7 @@
     padding: 10px 2px;
     color: #FFF;
     text-decoration: none;
-    border-radius: 30px;
+    border-radius: 20px;
 }
 
 #index_princesas #conteudo {
@@ -108,9 +113,121 @@
     width: 100%;
 }
 
-#index_marvel {
-    margin: 50px 0;
+#index_plus img{
+    position: relative;
+    object-fit: cover;
+    top: auto;
+    left: auto;
+    height: 50%;
+    width: 100%;
 }
+
+#index_plus a {
+    position: absolute;
+    z-index: 1;
+
+    width: 60vh;
+    height: 6vh;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 34em;
+    margin-left: 26em;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: #242fa8;
+    padding: 10px 2px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+
+#index_marvel img{
+    position: relative;
+    object-fit: cover;
+    top: auto;
+    left: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#index_marvel a {
+    position: absolute;
+    width: 60vh;
+    height: 6vh;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 32em;
+    margin-left: 26em;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: #070602;
+    padding: 10px 2px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+#index_desenho img{
+    position: relative;
+    object-fit: cover;
+    top: auto;
+    left: auto;
+    height: 80%;
+    width: 100%;
+}
+
+#index_desenho a {
+    position: absolute;
+    z-index: 1;
+    width: 60vh;
+    height: 6vh;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 4em;
+    margin-left: 20em;
+    text-transform: uppercase;
+    background: linear-gradient(to right, rgb(59, 213, 195), rgb(226, 113, 187),  rgb(233, 80, 80));
+    padding: 10px 2px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+#index_pixar img{
+    position: relative;
+    object-fit: cover;
+    top: auto;
+    left: auto;
+    height: 50em;
+    width: 100%;
+}
+
+#index_pixar a {
+    position: absolute;
+    width: 60vh;
+    height: 6vh;
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    margin-top: 32em;
+    margin-left: 26em;
+    text-transform: uppercase;
+    font-weight: 400;
+    background-color: #1478eb;
+    padding: 10px 2px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 20px;
+    z-index: 1;
+}
+
 
 #imagens {
     margin-top: 30px;
@@ -131,6 +248,10 @@
     height: 100%;
 }
 
+#princesas_color{
+    background: linear-gradient(135deg, #1ec8b9, rgb(109, 130, 236),  rgb(195, 67, 227));
+}
+
 #princesas .container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -147,16 +268,25 @@
     margin-bottom: 20px;
 }
 
+#princesa{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#plus_color{
+    background-color: #0b1448;
+}
+
+.plus  h4{
+    color: #fff;
+}
+
 .plus .container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     margin-bottom: 50px;
-}
-
-#princesa{
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 
 .plus .container img{
@@ -169,6 +299,18 @@
     transform: scale(0.9);
 }
 
+#marvel_lanc{
+    padding-left: 50px;
+}
+
+#marvel h3{
+    color: #FFF;
+}
+
+#marvel #slid_galeri iframe {
+    margin: 10px;
+}
+
 #marvel .container{
     display: grid;
     grid-template-columns: repect(2, 1fr);
@@ -176,13 +318,9 @@
     margin-bottom: 50px;
 }
 
-#marvel .container iframe{
-    width: 100%;
-}
 
 #desenho{
-     /*background-image: url("../imagens/desenhos/desenho_back");*/
-   background-color: rgb(232, 230, 230);
+    background: linear-gradient(to right, rgb(236, 105, 93), rgb(88, 112, 234),  rgb(109, 236, 196));
     z-index: -1;
 }
 
@@ -253,20 +391,22 @@
 
 }
 
-#marvel h2{
+#marvel_color h2{
     color: #fff;
     font-size: 30px;
     z-index: 99;
 }
-
-
-#marv h2{
-    color: #100e0e;
-    z-index: 99;
+#marvel_color{
+    background-color: #01072c;
 }
 
 #marv .plus {
     background-color: #01072c;
+}
+
+
+#pixar{
+    background: linear-gradient(to bottom, rgb(226, 226, 243), rgb(15, 129, 236));
 }
 
 .slider img{
@@ -276,6 +416,21 @@
 #slid_galeri{
     align-items:center;
 }
+
+#slid_galeri ul li{
+    margin: 10px;
+}
+
+#slid_galeri ul li img{
+    height: 20em;
+}
+
+#slid_galeri h5{
+    color: #525255;
+   font-size: 25px;
+   margin-bottom: 5px;
+}
+
 .carousel {
     position: relative;
     object-fit: cover;
