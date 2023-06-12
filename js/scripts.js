@@ -1,12 +1,13 @@
 $(document).ready(function(){
-    $("#carousel ul").bxSlider({
+    $(".slider ul").bxSlider({
         auto:true,
+		slideWidth : 1540,
         //mode:'fade',  forma de trasição
        // speed: 100,  velocidade da transição
         pager: false, // sem a paginação (bolinhas)
     });
 
-    $('#fotos .container').magnificPopup({
+    $('.plus').magnificPopup({
 		delegate: 'a',
 		type: 'image',
 		closeOnContentClick: false,
@@ -30,5 +31,25 @@ $(document).ready(function(){
 		}
 		
 	});
-
   });
+
+
+ /* $(document).ready(function(){
+	$(".slider ul").bxSlider({
+	adaptiveHeight: true,
+	slideWidth : 1540,
+	pager: false,
+	auto:true,
+  });
+});*/
+
+
+$(document).ready(function(){
+	$("#slid_galeri ul").bxSlider({
+		minSlides: 8,
+		maxSlides: 9,
+		slideWidth: 170,
+		pager: false,
+		auto:true
+  });
+});
