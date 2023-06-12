@@ -45,8 +45,8 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-	$("#slid_galeri ul").bxSlider({
-		minSlides: 8,
+	$(".slid_galeri ul").bxSlider({
+		minSlides: 9,
 		maxSlides: 9,
 		slideWidth: 170,
 		pager: false,
