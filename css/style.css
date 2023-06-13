@@ -27,9 +27,13 @@
 }
 
 .slid_galeri ul li{
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
+.slid_marv ul iframe{
+    margin: 5px;
+}
 
 .tamanho{
     margin: 0 auto;
@@ -110,10 +114,6 @@
 
 #index_princesas {
     position: relative;
-}
-
-#index_princesas a:hover{
-    text-decoration: underline;
 }
 
 #index_princesas #conteudo {
@@ -245,8 +245,13 @@
     color: #FFF;
 }
 
+#marvel .slid_galeri{
+    max-width: 1400px;
+}
+
 #marvel .slid_galeri iframe {
     margin: 0 auto;
+    width: 50%;
 }
 
 #marvel{
