@@ -48,8 +48,18 @@ $(document).ready(function(){
 	$(".slid_galeri ul").bxSlider({
 		minSlides: 9,
 		maxSlides: 9,
-		slideWidth: 170,
+		slideWidth: 200,
 		pager: false,
 		auto:true
+  });
+});
+
+$(document).ready(function(){
+	$(".slid_marv ul").bxSlider({
+		minSlides: 2,
+		maxSlides: 3,
+		slideWidth: 1000,
+		pager: true,
+		auto:true,
   });
 });
