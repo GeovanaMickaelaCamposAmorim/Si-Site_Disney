@@ -46,9 +46,9 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$(".slid_galeri ul").bxSlider({
-		minSlides: 9,
-		maxSlides: 9,
-		slideWidth: 200,
+		minSlides: 7,
+		maxSlides: 7,
+		slideWidth: 1000,
 		pager: false,
 		auto:true
   });
